@@ -1,45 +1,34 @@
 #include <iostream>
 #include <cstdlib>
+#include <random>
 
 //Headers
 
 #include "Header.h"
 
-using namespace std;
 
+/*Try to call the function without a seed and alternate between them?*/
 
 void randomNumber(int num1) {
 
 	int maxRange = num1;
-	bool answer;
-	double result;
+	int result;
+	num1--;
 
-
-	//Function for random number
+	/*Old way of generating randomness
 	srand((unsigned)time(NULL));
-
-	//Where we call & store our random number
 	result = rand() % maxRange;
+	*/
+
+	//We generate the random number here. Make sure static is in front so it doesn't generate a new seed everytime we call the function 
+	static std:: random_device random; // this is to get a new seed from the hardware. if this isn't good it will generate the same random numbers everytime regardless if the program is ran again or not
+	static std::default_random_engine generator(random());
+	static std::uniform_int_distribution<int> distribution(0, num1);
+	result = distribution(generator);
 
 	//Console output
-	cout << "Your random number is: " << endl;
-	cout << result << endl;
+	std::cout << "Your random number is: " << std::endl;
+	std::cout << result << std::endl;
 
-	cout << "Another number?" << endl;
-	cin >> answer;
-
-		while (answer) {
-
-			if (cin && (answer == 0 || answer == 1)) {
-				randomNumber(num1);
-				cout << "Another number?" << endl;
-				int answer2;
-				cin >> answer2;
-			}
-			else {
-				cout << "Error wrong answer." << endl;
-				break;
-			}
-		}
 
 }
