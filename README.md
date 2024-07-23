@@ -11,4 +11,4 @@ Multiple random number at once.
 
 Upcoming:
 
-Unique random numbers (WIP).
+Unique random numbers (WIP - In dev branch only for now).
