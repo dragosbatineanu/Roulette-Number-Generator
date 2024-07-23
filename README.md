@@ -8,7 +8,8 @@ Custom range picker. From 0 to N.
 
 Multiple random number at once.
 
+Unique random numbers 
 
 Upcoming:
 
-Unique random numbers (WIP - In dev branch only for now).
+Better CLI interface (WIP)
