@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\NumberPicker.cpp" />
+    <ClCompile Include="src\UniqueNumbers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NumberPicker.h" />
