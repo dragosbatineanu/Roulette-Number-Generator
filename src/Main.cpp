@@ -2,6 +2,7 @@
 #include <cstdlib>
 
 #include "NumberPicker.h"
+#include "Strings.h"
 
 
 int main() {
@@ -13,13 +14,12 @@ int main() {
 	bool unique;
 
 
-	std::cout << "Enter the range of numbers:" << std::endl;
-	std::cout << "Highest number:" << std::endl;
+	std::cout << s_rangeNumbers << std::endl;
+	std::cout << s_highestNumbers << std::endl;
 	std::cin >> highestNumber;
-	std::cout << "How many numbers?" << std::endl;
+	std::cout << s_amountNumbers << std::endl;
 	std::cin >> amountNumbers;
-	std::cout << "Do they need to be unique numbers?" << std::endl;
-	std::cin >> unique;
+
 
 	if (amountNumbers == 1) {
 		while (answer) {
@@ -36,6 +36,8 @@ int main() {
 	}
 
 	if (amountNumbers > 1) {
+		std::cout << "Do they need to be unique numbers?" << std::endl;
+		std::cin >> unique;
 		uniqueNumbers(highestNumber, amountNumbers, unique);
 	}
 

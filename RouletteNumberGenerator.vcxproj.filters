@@ -21,9 +21,15 @@
     <ClCompile Include="src\NumberPicker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\UniqueNumbers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NumberPicker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Strings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\NumberPicker.h" />
+    <ClInclude Include="src\Strings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
