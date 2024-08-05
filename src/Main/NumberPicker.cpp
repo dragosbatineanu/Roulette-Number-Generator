@@ -8,19 +8,21 @@
 
 //Headers
 
-#include "NumberPicker.h"
+#include "../Header/NumberPicker.h"
 
 
 
 //This is for 1 number
 void randomNumber(int num1) {
 
+
+
 	//num1 is the maximum number allowed
 	int maxRange = --num1; //we -- it because for some reason it goes up num+1
 	int result;
 
 	//We generate the random number here
-	static std:: random_device random; // this is to get a new seed from the hardware. if this isn't good it will generate the same random numbers everytime regardless if the program is ran again or not
+	static std::random_device random; // this is to get a new seed from the hardware. if this isn't good it will generate the same random numbers everytime regardless if the program is ran again or not
 	static std::default_random_engine generator(random());
 	static std::uniform_int_distribution<int> distribution(0, num1);
 	result = distribution(generator);

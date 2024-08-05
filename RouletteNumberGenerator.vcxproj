@@ -148,13 +148,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\NumberPicker.cpp" />
-    <ClCompile Include="src\UniqueNumbers.cpp" />
+    <ClCompile Include="src\Settings\Random.cpp" />
+    <ClCompile Include="src\Main\Main.cpp" />
+    <ClCompile Include="src\Main\NumberPicker.cpp" />
+    <ClCompile Include="src\Main\UniqueNumbers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\NumberPicker.h" />
-    <ClInclude Include="src\Strings.h" />
+    <ClInclude Include="src\Settings\Random.h" />
+    <ClInclude Include="src\Header\NumberPicker.h" />
+    <ClInclude Include="src\Header\Strings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
