@@ -9,7 +9,3 @@ Custom range picker. From 0 to N.
 Multiple random number at once.
 
 Unique random numbers 
-
-Upcoming:
-
-Better CLI interface (WIP)
